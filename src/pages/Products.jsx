@@ -1,9 +1,9 @@
-// src/pages/Products.jsx
+
 import React, { useState, useEffect } from 'react';
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../firebase/config'; 
 import ItemList from '../components/ItemList/ItemList';
-import ItemCount from '../components/ItemCount/ItemCount'; // Importamos ItemCount
+import ItemCount from '../components/ItemCount/ItemCount'; 
 import { useCart } from '../context/CartContext';
 
 const Products = () => {
@@ -59,7 +59,7 @@ const Products = () => {
     <div className="products-container">
       <h2>Productos</h2>
 
-      {/* Filtros de precio */}
+      {}
       <div>
         <label>Filtrar por precio:</label>
         <select onChange={handleFilterChange} value={filter}>
@@ -81,7 +81,7 @@ const Products = () => {
               <p>Precio: ${producto.Price}</p>
               <p>Stock disponible: {producto.stock}</p>
               
-              {/* Agregar ItemCount aquí */}
+              {}
               <ItemCount
                 stock={producto.stock}
                 productId={producto.id}

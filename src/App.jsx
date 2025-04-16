@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import './App.css';
 import { useEffect, useRef } from 'react';
 import { CartProvider } from './context/CartContext';
@@ -9,9 +9,9 @@ import Section1 from './components/Section1/Section1';
 import Section2 from './components/Section2/Section2';
 import Section3 from './components/Section3/Section3';
 import Footer from './components/Footer/Footer';
-import Products from './pages/Products'; // Página de productos
-import ProductDetail from './pages/ProductDetail'; // Página de detalles del producto
-import CartPage from './pages/CartPage'; // Página del carrito de compras
+import Products from './pages/Products'; 
+import ProductDetail from './pages/ProductDetail'; 
+import CartPage from './pages/CartPage';
 
 function Home({ section2Ref }) {
   return (
@@ -52,7 +52,7 @@ function App() {
         <Route path="/" element={<Home section2Ref={section2Ref} />} />
         <Route path="/products" element={<Products />} />
         <Route path="/producto/:id" element={<ProductDetail />} />
-        <Route path="/cart" element={<CartPage />} /> {/* Ruta para el carrito */}
+        <Route path="/cart" element={<CartPage />} /> {}
       </Routes>
       <Footer />
     </CartProvider>

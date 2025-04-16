@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { db } from "../firebase/config";
 import { doc, getDoc } from "firebase/firestore";
 import { useCart } from "../context/CartContext";
-import ItemCount from "../components/ItemCount/ItemCount"; // Importamos ItemCount
+import ItemCount from "../components/ItemCount/ItemCount"; 
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -12,7 +12,7 @@ const ProductDetail = () => {
   const [producto, setProducto] = useState(null);
   const [loading, setLoading] = useState(true);
   const [addedToCart, setAddedToCart] = useState(false);
-  const [quantity, setQuantity] = useState(1); // Controlar la cantidad seleccionada
+  const [quantity, setQuantity] = useState(1); 
 
   useEffect(() => {
     if (id) {
@@ -46,7 +46,7 @@ const ProductDetail = () => {
     if (newQuantity > 0 && newQuantity <= producto.stock) {
       setQuantity(newQuantity);
       if (addedToCart) {
-        updateQuantity(producto.id, newQuantity); // Actualizamos la cantidad si el producto ya está en el carrito
+        updateQuantity(producto.id, newQuantity); 
       }
     }
   };

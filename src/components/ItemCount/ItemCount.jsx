@@ -1,4 +1,4 @@
-// src/components/ItemCount/ItemCount.jsx
+
 import React, { useState } from 'react';
 
 const ItemCount = ({ stock, onAddToCart, productId }) => {

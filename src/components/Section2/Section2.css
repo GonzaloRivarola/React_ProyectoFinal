@@ -1,0 +1,29 @@
+
+
+.section2 {
+    background: linear-gradient(0deg, rgb(0, 0, 0),rgb(3, 3, 3),rgb(20, 20, 20));
+    display: flex;
+    align-items: center;
+    padding-top: 0rem;
+    padding-bottom: 8rem;
+    
+    justify-content: center;
+}
+
+.deluxeImg {
+    margin: 8rem;
+    padding: 4rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    padding: 4rem;
+    font-size: 5rem;
+    background: linear-gradient(90deg, rgb(151, 151, 151),rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block
+    }

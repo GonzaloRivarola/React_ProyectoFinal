@@ -1,0 +1,20 @@
+.item-list-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .item-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #a7a7a7, rgb(255, 255, 255), rgb(216, 216, 216));
+    text-align: center;
+  }
+  

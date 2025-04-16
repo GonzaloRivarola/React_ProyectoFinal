@@ -1,0 +1,21 @@
+
+
+.section3 {
+    background: linear-gradient(0deg, rgb(20, 20, 20),rgb(0, 0, 0),rgb(3, 3, 3));
+    padding-top: 0rem;
+    padding-bottom: 8rem;
+    
+    justify-content: center;
+}
+
+
+h2 {
+    padding: 4rem;
+    font-size: 4rem;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(151, 151, 151));
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: right;
+    padding-right: 11rem;
+    }

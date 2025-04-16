@@ -1,0 +1,61 @@
+/* Contenedor de las tarjetas */
+.item-list-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea las tarjetas a la izquierda */
+    flex-wrap: wrap; /* Asegura que las tarjetas se ajusten a nuevas filas en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+    width: 100%; /* Asegura que el contenedor tenga todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del contenedor */
+  }
+  
+  /* Estilo de las tarjetas de producto */
+  .item-card {
+    width: 300px; /* Ancho fijo de las tarjetas */
+    flex: 0 1 300px; /* No permite que las tarjetas se estiren más de 300px */
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+    background: linear-gradient(45deg, #a7a7a7, rgb(255, 255, 255), rgb(216, 216, 216));
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0; /* Eliminar margen para que el gap sea el único espaciado */
+  }
+  
+  /* Estilo de la imagen */
+  .item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  /* Detalles de la tarjeta */
+  .item-details {
+    padding-top: 10px;
+  }
+  
+  /* Estilo de los botones */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsividad: para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .item-card {
+      width: 100%; /* En pantallas pequeñas, las tarjetas ocuparán el 100% del ancho */
+      flex: 0 1 100%;
+    }
+  }
+  
